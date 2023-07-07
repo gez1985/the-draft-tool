@@ -1,0 +1,39 @@
+.container {
+  height: 55vh;
+  overflow-y: auto;
+}
+
+.player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.name {
+  margin: 0;
+}
+
+.name {
+  margin: 0;
+}
+
+.input {
+  margin-bottom: 16px;
+}
+
+.search {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  padding: 8px 0px;
+  border: 0;
+  box-shadow: 2px #52ab98;
+  border-bottom: 1px solid #999;
+}
+
+.search:focus {
+  outline: none;
+}
+.search:hover {
+  outline: none;
+}

@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/provider.jsx", "src/lib/hooks/use-scroll-direction.js", "src/lib/context/user-context.js", "src/app/page.jsx", "src/app/components/header/header.jsx", "src/app/components/templates/shortlist/index.jsx", "src/app/api/test/route.js", "src/app/layout.jsx", "src/app/draft/page.jsx"],
+  "exclude": ["node_modules"]
+}

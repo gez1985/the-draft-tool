@@ -1,0 +1,70 @@
+.container {
+  height: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 1fr;
+}
+
+.headerWrapper {
+  background-color: #52ab98;
+  border-radius: 2px 2px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+.title {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.listWrapper {
+  background-color: #f2f2f2;
+  border-radius: 0 0 2px 2px;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/** 
+  Breakpoints:
+  ------------
+  sm: min-width: 640px; //small device
+  md: min-width: 768px; // medium device
+  lg: min-width: 1024px; // large device
+  xl: min-width: 1280px; // extra large device
+  2xl: min-width: 1536px; // 2 x extra large device
+**/
+
+/** sm breakpoint **/
+@media (min-width: 640px) {
+}
+
+/** md breakpoint **/
+@media (min-width: 768px) {
+}
+
+/** lg breakpoint **/
+@media (min-width: 1024px) {
+  .listWrapper::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .listWrapper::-webkit-scrollbar-track {
+    color: #fff;
+  }
+  
+  .listWrapper::-webkit-scrollbar-thumb {
+    background-color: #c3c3c3;
+    border-radius: 5px;
+  }
+}
+
+/** xl breakpoint **/
+@media (min-width: 1280px) {
+}
+

@@ -1,0 +1,83 @@
+.content {
+  padding: 8px 12px;
+  display: grid;
+  grid-template-columns: 28px 1fr repeat(2, 50px) 30px;
+  grid-template-rows: 1fr;
+  grid-column-gap: 4px;
+  grid-row-gap: 0px;
+}
+
+.text {
+  margin: 0;
+  font-size: 14px;
+  align-self: center;
+}
+
+.info {
+  margin: 0;
+  font-size: 14px;
+  justify-self: center;
+  align-self: center;
+}
+
+.deleteBtn {
+  cursor: pointer;
+  margin: 0;
+}
+
+.iconWrapper {
+  justify-self: end;
+  align-self: center;
+}
+
+.pointsLabel {
+  font-style: italic;
+  margin: 0;
+  margin-left: 8px;
+  font-size: 12px;
+  color: #888888;
+  align-self: center;
+  display: none;
+
+}
+
+.nameWrapper {
+  display: flex;
+  align-self: center;
+  align-content: center;
+}
+
+/** 
+  Breakpoints:
+  ------------
+  sm: min-width: 640px; //small device
+  md: min-width: 768px; // medium device
+  lg: min-width: 1024px; // large device
+  xl: min-width: 1280px; // extra large device
+  2xl: min-width: 1536px; // 2 x extra large device
+**/
+
+/** sm breakpoint **/
+@media (min-width: 640px) {
+  .pointsLabel {
+    display: block;
+  }
+}
+
+/** md breakpoint **/
+@media (min-width: 768px) {
+  .pointsLabel {
+    display: none;
+  }
+}
+
+/** lg breakpoint **/
+@media (min-width: 1024px) {
+  .pointsLabel {
+    display: block;
+  }
+}
+
+/** xl breakpoint **/
+@media (min-width: 1280px) {
+}

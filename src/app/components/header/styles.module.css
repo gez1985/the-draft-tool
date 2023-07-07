@@ -1,0 +1,87 @@
+.container {
+  /* position: sticky;
+  top: 0px; */
+  background-color: #f2f2f2;
+  height: 6rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+  z-index: 1;
+  width: 100%;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0.5rem;
+}
+
+.hide {
+  top: -6rem;
+}
+
+.col1 {
+  justify-self: start;
+  align-self: center;
+}
+
+.col2 {
+  justify-self: center;
+  align-self: center;
+}
+
+.col3 {
+  justify-self: end;
+  align-self: center;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.name {
+  margin-right: 1rem;
+  font-size: 12px;
+  color: #888;
+  font-style: italic;
+  display: none;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+}
+
+/** 
+  Breakpoints:
+  ------------
+  sm: min-width: 640px; //small device
+  md: min-width: 768px; // medium device
+  lg: min-width: 1024px; // large device
+  xl: min-width: 1280px; // extra large device
+  2xl: min-width: 1536px; // 2 x extra large device
+**/
+
+/** sm breakpoint **/
+@media (min-width: 640px) {
+  .name {
+    display: inline-block;
+  }
+  .container {
+    grid-template-columns: 1fr 100px 1fr;
+    grid-column-gap: 1rem;
+  }
+}
+
+/** md breakpoint **/
+@media (min-width: 768px) {
+}
+
+/** lg breakpoint **/
+@media (min-width: 1024px) {
+}
+
+/** xl breakpoint **/
+@media (min-width: 1280px) {
+}

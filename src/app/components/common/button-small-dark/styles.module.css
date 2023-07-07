@@ -1,0 +1,22 @@
+.container {
+  background-color: #2b6777;
+  color: #ffffff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+
+.container:hover {
+  background-color: #124756;
+}
+
+.container:disabled {
+  background-color: #d3d3d3;
+}

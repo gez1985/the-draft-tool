@@ -1,0 +1,109 @@
+.container {
+  padding-top: 4px;
+}
+
+.selectWrapper {
+  background-color: #f2f2f2;
+  padding: 16px 16px 8px;
+}
+
+.playerContainer {
+  margin-bottom: 12px;
+  background-color: #fff;
+  padding: 16px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr 25px 40px;
+  grid-template-rows: 1fr;
+  grid-column-gap: 4px;
+}
+
+.text {
+  margin: 0;
+  justify-self: end;
+  align-self: center;
+  font-size: 12px;
+}
+
+.name {
+  margin: 0;
+  justify-self: start;
+  align-self: center;
+  font-size: 12px;
+}
+
+.caption {
+  font-size: 14px;
+}
+
+.playersListWrapper {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playersList {
+  background-color: #f2f2f2;
+  padding: 8px 8px 0px;
+  min-width: 250px;
+}
+
+.player {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 20px 1fr 25px 40px;
+  grid-template-rows: 1fr;
+  grid-column-gap: 4px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+.index {
+  justify-self: start;
+  align-self: center;
+  margin: 0;
+}
+
+/** 
+  Breakpoints:
+  ------------
+  sm: min-width: 640px; //small device
+  md: min-width: 768px; // medium device
+  lg: min-width: 1024px; // large device
+  xl: min-width: 1280px; // extra large device
+  2xl: min-width: 1536px; // 2 x extra large device
+**/
+
+/** sm breakpoint **/
+@media (min-width: 640px) {
+  .playerContainer {
+    padding: 20px;
+    grid-template-columns: 1fr 50px 50px;
+    grid-template-rows: 1fr;
+    grid-column-gap: 4px;
+  }
+  .text {
+    font-size: 16px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+  .playersList {
+    min-width: 400px;
+  }
+}
+
+/** md breakpoint **/
+@media (min-width: 768px) {
+}
+
+/** lg breakpoint **/
+@media (min-width: 1024px) {
+}
+
+/** xl breakpoint **/
+@media (min-width: 1280px) {
+}
