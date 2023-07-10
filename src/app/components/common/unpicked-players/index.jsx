@@ -6,7 +6,7 @@ import getSortedPlayers from "@/lib/utils/get-sorted-players";
 const UnpickedPlayers = ({
   players,
   handlePick,
-  setDeletePlayer,
+  setDeletedPlayer,
   name,
   setName,
 }) => {
@@ -58,7 +58,7 @@ const UnpickedPlayers = ({
             player={player}
             index={index}
             handlePick={handlePick}
-            setDeletePlayer={setDeletePlayer}
+            setDeletedPlayer={setDeletedPlayer}
           />
         ))}
       </div>

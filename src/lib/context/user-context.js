@@ -63,11 +63,14 @@ export const UserProvider = ({ children }) => {
     }
   };
 
-  const removeFromShortlist = async (index) => {
+  const removeFromShortlist = async (playerId) => {
     setUpdatingUser(true);
     try {
-      user.shortlist.splice(index, 1);
-      await updateUser(user);
+      const index = user.shortlist.indexOf(playerId);
+      if (index > -1) {
+        user.shortlist.splice(index, 1);
+        await updateUser(user);
+      }
       setUpdatingUser(false);
     } catch (error) {
       console.log(error.message);

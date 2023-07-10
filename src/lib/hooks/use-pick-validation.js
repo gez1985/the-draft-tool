@@ -6,6 +6,9 @@ const usePickValidation = () => {
 
   const handlePickValidation = (player, user) => {
     const myTeam = players.filter((player) => user.myTeam.includes(player.id));
+    if (myTeam.length < 1) {
+      return { valid: true, msg: "validPick" };
+    }
     if (user.myTeam.length > 15) {
       return { valid: false, msg: "full" };
     }
@@ -24,7 +27,7 @@ const usePickValidation = () => {
   const maxFromTeam = (player, myTeam) => {
     let count = 0;
     myTeam.forEach((teamPlayer) => {
-      if (teamPlayer.team.name === player.team.name) {
+      if (teamPlayer && teamPlayer.team.name === player.team.name) {
         count++;
       }
     });
@@ -38,7 +41,7 @@ const usePickValidation = () => {
     let count = 0;
     const position = player.position.name;
     myTeam.forEach((teamPlayer) => {
-      if (teamPlayer.position.name === position) {
+      if (teamPlayer && teamPlayer.position.name === position) {
         count++;
       }
     });

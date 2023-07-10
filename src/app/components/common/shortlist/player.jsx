@@ -18,9 +18,9 @@ const Player = ({ player, index }) => {
 
   const pathname = usePathname();
 
-  const handleRemoveClick = (index) => {
+  const handleRemoveClick = (playerId) => {
     if (!updatingUser) {
-      removeFromShortlist(index);
+      removeFromShortlist(playerId);
     }
   };
 
@@ -55,7 +55,7 @@ const Player = ({ player, index }) => {
               <span className={styles.info}>{player.team.name}</span>
               <div className={styles.iconWrapper}>
                 <ButtonClear
-                  onClick={() => handleRemoveClick(index)}
+                  onClick={() => handleRemoveClick(player.id)}
                   disabled={updatingUser}
                 >
                   <IconContext.Provider

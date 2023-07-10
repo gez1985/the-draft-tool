@@ -5,7 +5,7 @@ import { IconContext } from "react-icons";
 import clsx from "clsx";
 import ButtonClear from "../button-clear";
 
-const Player = ({ player, handlePick, setDeletePlayer }) => {
+const Player = ({ player, handlePick, setDeletedPlayer }) => {
   const { user, updateUser, updatingUser } = useUser();
 
   const handleAddToShortlist = () => {
@@ -70,7 +70,7 @@ const Player = ({ player, handlePick, setDeletePlayer }) => {
             </IconContext.Provider>
           </ButtonClear>
           <ButtonClear
-            onClick={() => setDeletePlayer(player)}
+            onClick={() => setDeletedPlayer(player)}
             disabled={updatingUser}
           >
             <IconContext.Provider
